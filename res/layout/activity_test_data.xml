@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/eligible" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:text="@string/voltage" />
+
+        <TextView
+            android:id="@+id/test_voltage"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_weight="1"
+            android:text="@string/internal" />
+
+        <TextView
+            android:id="@+id/test_internal"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/Battery_type" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/Battery_model" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/Battery_manufacturers" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/testing_time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/test_Battery_type"
+                style="@style/teststyle" />
+
+            <TextView
+                android:id="@+id/test_Battery_model"
+                style="@style/teststyle" />
+
+            <TextView
+                android:id="@+id/test_Battery_manufacturers"
+                style="@style/teststyle" />
+
+            <TextView
+                android:id="@+id/test_testing_time"
+                style="@style/teststyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_width="wrap_content"
+            android:text="@string/Battery_size" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:text="@string/test_long" />
+
+        <TextView
+            android:id="@+id/test_long"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_weight="1"
+            android:text="@string/test_width" />
+
+        <TextView
+            android:id="@+id/test_width"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_weight="1"
+            android:text="@string/test_height" />
+
+        <TextView
+            android:id="@+id/test_height"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/test_lv_number"
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_number"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_voltage"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_internal"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_eligible"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_NFCnumber"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_Batterynumber"
+            android:textColor="@color/heise" />
+         <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_ishege"
+            android:textColor="@color/heise" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/test_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>

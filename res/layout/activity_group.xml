@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pite.r.GroupActivity" >
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_cell"
+        android:orientation="horizontal">
+         <TextView style="@style/teststyle2"
+            android:text="@string/string13"
+            android:layout_weight="1"/>
+        <View android:layout_height="match_parent"
+            android:background="@drawable/line"
+            android:layout_width="1dp"/>
+         <TextView style="@style/teststyle2"
+            android:text="@string/string18"
+            android:layout_weight="1"/>
+        <View android:layout_height="match_parent"
+            android:background="@drawable/line"
+            android:layout_width="1dp"/>
+        
+         <TextView style="@style/teststyle2"
+            android:text="@string/string14"
+            android:layout_weight="1"/>
+        <View android:layout_height="match_parent"
+            android:background="@drawable/line"
+            android:layout_width="1dp"/>
+        
+         <TextView style="@style/teststyle2"
+            android:text="@string/string15"
+            android:layout_weight="1"/>
+        <View android:layout_height="match_parent"
+            android:background="@drawable/line"
+            android:layout_width="1dp"/>
+        
+         <TextView style="@style/teststyle2"
+            android:text="@string/string19"
+            android:layout_weight="1"/>
+         <View android:layout_height="match_parent"
+             android:background="@drawable/line"
+            android:layout_width="1dp"/>
+        
+         <TextView style="@style/teststyle2"
+            android:text="@string/string17"
+            android:layout_weight="1"/>
+        </LinearLayout>
+	<ListView android:id="@+id/group_lv"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:dividerHeight="1dp"
+	    android:divider="@drawable/line">
+	    
+	</ListView>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蓄电池分选管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_edt_name">请输入用户名</string>
+    <string name="login_edt_pwd">请输入密码</string>
+    <string name="save_pwd">记住密码</string>
+    <string name="language_change">语言选择</string>
+    <string name="login_btn">登录</string>
+    <string name="ok_exit">是否退出？</string>
+    <string name="no">否</string>
+    <string name="yes">是</string>
+    <string name="pwserror">密码错误</string>
+    <string name="WIFI">请选择</string>
+    <string name="openWIFI">WIFI打开成功</string>
+    <string name="version">版本号:</string>
+    <string name="MainRActivity">退役电动汽车蓄电池\n分选管理系统\n PRT ECS 1600</string>
+    <string name="test_data">查看数据</string>
+    <string name="send_data">发送数据</string>
+    <string name="send_readNFC">读NFC</string>
+    <string name="title_activity_test_data">TestDataActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="eligible">合格标准</string>
+    <string name="testing_time">测试时间</string>
+    <string name="Battery_type">电池类型</string>
+    <string name="Battery_model">电池型号</string>
+    <string name="Battery_manufacturers">电池厂家</string>
+    <string name="Battery_size">电池外观尺寸</string>
+    <string name="internal">内阻</string>
+    <string name="voltage">电压</string>
+    <string name="test_long">长</string>
+    <string name="test_width">宽</string>
+    <string name="test_height">高</string>
+    <string name="test_number">No.</string>
+    <string name="test_voltage">U(V)</string>
+    <string name="test_internal">R1(mΩ)</string>
+    <string name="test_eligible">C(%)</string>
+    <string name="test_NFCnumber">R2</string>
+    <string name="test_Batterynumber">C2</string>
+    <string name="test_ishege">合格</string>
+    <string name="resqustFails">请求失败</string>
+    <string name="cross">√</string>
+    <string name="checkmark">X</string>
+    <!-- 发送数据信息 -->
+    <string name="string0">发送数据</string>
+    <string name="string1">3915_ID号</string>
+    <string name="string2">电池节数</string>
+    <string name="string3">电池额定电压</string>
+    <string name="string4">电池额定容量</string>
+    <string name="string5">电池厂家</string>
+    <string name="string6">电池型号</string>
+    <string name="string7">库房编号</string>
+    <string name="string8">库房区域编号</string>
+    <string name="string9">库房货架编号</string>
+    <string name="string10">电池外观尺寸</string>
+    <string name="string11">发送</string>
+    <!-- 站信息 -->
+    <string name="title_activity_station">StationActivity</string>
+    <string name="string12">站信息</string>
+    <string name="string13">站名</string>
+    <string name="string14">电池状态</string>
+    <string name="string15">充电状态</string>
+    <string name="string16">GPRS</string>
+    <string name="string17">PLC</string>
+    <!-- 组信息 -->
+
+    <string name="title_activity_group">GroupActivity</string>
+    <string name="string18">组名</string>
+    <string name="string19">WIFI</string>
+    <string name="string20">电池组信息</string>
+    <string name="string25">数据已上传，请测量</string>
+    <string name="string26">发送成功</string>
+    <string name="string27">ID号:</string>
+    <string name="string28">电压:</string>
+    <string name="string29">内阻:</string>
+    <string name="string30">合格：</string>
+    <string name="update">是否确定更新？</string>
+
+</resources>

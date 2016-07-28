@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/test_data"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/test_data"
+            style="@style/size25"
+            android:background="@drawable/btselector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/send_data"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/send_data"
+            style="@style/size25"
+            android:background="@drawable/btselector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/send_NFC"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            style="@style/size25"
+            android:text="@string/send_readNFC"
+            android:background="@drawable/btselector" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/string27"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/readNFC_id"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/string28"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/readNFC_V"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/string29"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/readNFC_R"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/string30"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/readNFC_hege"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string1" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string2" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string3" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/send_ID"
+                style="@style/teststyle"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/send_batteryNum"
+                style="@style/teststyle"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/send_Rated_voltage"
+                style="@style/teststyle"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/send_Rated_capacity"
+                style="@style/teststyle"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string7" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string8" />
+
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string9" />
+            <TextView
+                style="@style/teststyle"
+                android:text="@string/string6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/send_Warehouse_number"
+                style="@style/teststyle"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/send_Zone_number"
+                style="@style/teststyle"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/send_Shelf_number"
+                style="@style/teststyle"
+                android:gravity="center" />
+            <Spinner android:id="@+id/send_spType"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/biankuang"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/heise"
+            android:text="@string/string5" />
+
+        <Spinner
+            android:id="@+id/send_sp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="150dp"
+            android:background="@drawable/biankuang"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Battery_size" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:text="@string/test_long" />
+
+        <TextView
+            android:id="@+id/send_long"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_weight="1"
+            android:text="@string/test_width" />
+
+        <TextView
+            android:id="@+id/send_width"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/teststyle"
+            android:layout_weight="1"
+            android:text="@string/test_height" />
+
+        <TextView
+            android:id="@+id/send_height"
+            style="@style/teststyle"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/string11" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/test_lv_number"
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_number"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_voltage"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_internal"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_eligible"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_NFCnumber"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_Batterynumber"
+            android:textColor="@color/heise" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            style="@style/size10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_cell"
+            android:gravity="center"
+            android:text="@string/test_ishege"
+            android:textColor="@color/heise" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/send_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

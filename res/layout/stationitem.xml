@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lvitem"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/station_itemTv"
+        style="@style/teststyle2"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="1dp"
+        android:background="@drawable/line"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/station_itemTv2"
+        style="@style/teststyle2"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="1dp"
+        android:background="@drawable/line"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/station_itemTv3"
+        style="@style/teststyle2"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="1dp"
+        android:background="@drawable/line"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/station_itemTv4"
+        style="@style/teststyle2"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="1dp"
+        android:background="@drawable/line"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/station_itemTv5"
+        style="@style/teststyle2"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+</LinearLayout>

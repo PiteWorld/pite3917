@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@drawable/lvitem"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/test_lv_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_cell"
+        android:gravity="center"
+        android:textColor="@color/heise" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/test_voltage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_cell"
+        android:gravity="center"
+        android:textColor="@color/heise" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/test_internal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_cell"
+        android:gravity="center"
+        android:textColor="@color/heise" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/test_C"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_cell"
+        android:gravity="center"
+        android:textColor="@color/heise" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/test_R2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_cell"
+        android:gravity="center"
+        android:textColor="@color/heise" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/test_C2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_cell"
+        android:gravity="center"
+        android:textColor="@color/heise" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/test_hege"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_cell"
+        android:gravity="center"
+        android:textColor="@color/heise" />
+
+</LinearLayout>

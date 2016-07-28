@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pite.r.StationActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_cell"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/teststyle2"
+            android:layout_weight="1"
+            android:text="@string/string13" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="@drawable/line"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/teststyle2"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/string14" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="@drawable/line"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/teststyle2"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/string15" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="@drawable/line"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/teststyle2"
+            android:layout_weight="1"
+            android:text="@string/string16" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="@drawable/line"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/teststyle2"
+            android:layout_weight="1"
+            android:text="@string/string17" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/station_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/line"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

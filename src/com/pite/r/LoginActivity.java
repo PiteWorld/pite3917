@@ -58,13 +58,12 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnCh
 	public static String basic_ip;// 登录返回的地址
 	public static String nodid;
 	private Context context;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		context = this;
 		manager = (WifiManager) getSystemService(LoginActivity.this.WIFI_SERVICE);
-		setTitle("电动汽车管理系统");
+		setTitle(getResources().getString(R.string.loginname));
 		// 获取版本号
 		PackageManager pm = LoginActivity.this.getPackageManager();
 		PackageInfo pi;
@@ -79,6 +78,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnCh
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 
 	private void initData() {
@@ -86,10 +86,10 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnCh
 		login_pwd = (EditText) findViewById(R.id.login_pwd);
 		login_btn = (Button) findViewById(R.id.login_btn);
 		save_pwd = (CheckBox) findViewById(R.id.save_pwd);
-		sp_language = (Button) findViewById(R.id.sp_language);
+		// sp_language = (Button) findViewById(R.id.sp_language);
 		versionNumber = (TextView) findViewById(R.id.versionNumber);
 		login_btn.setOnClickListener(this);
-		sp_language.setOnClickListener(this);
+		// sp_language.setOnClickListener(this);
 		save_pwd.setOnCheckedChangeListener(this);
 		share = getSharedPreferences("test", LoginActivity.this.MODE_PRIVATE);
 
@@ -98,8 +98,8 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnCh
 			login_pwd.setText(share.getString("pwd", ""));
 			save_pwd.setChecked(share.getBoolean("isCheck", false));
 		}
-		//判断是否需要更新
-		HttpGetVersion(Constant.LOGIN_LOGOADSS.concat(Constant.GETVERSION_NAME),null);
+		// 判断是否需要更新
+		HttpGetVersion(Constant.LOGIN_LOGOADSS.concat(Constant.GETVERSION_NAME), null);
 	}
 
 	/***
@@ -133,7 +133,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnCh
 			HttpGetLogin(Constant.BATTERY_BASIC_ADDRESS_LOGIN + Constant.BATTERY_BASIC_LOGIN + name + "/" + pwd, null);
 
 		} else {
-			selelanguage(LoginActivity.this);
+			// selelanguage(LoginActivity.this);
 		}
 	}
 
@@ -285,70 +285,80 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnCh
 		startActivity(new Intent().setClass(LoginActivity.this, LoginActivity.class));
 		// LoginActivity.this.finish();
 	}
+
 	/***
 	 * 获取版本号 判断程序是否需要更新
 	 */
-	private void HttpGetVersion(String url, RequestParams params){
+	private void HttpGetVersion(String url, RequestParams params) {
 		AsyncHttpClient client = new AsyncHttpClient();
 		client.get(url, null, new AsyncHttpResponseHandler() {
-			
+
 			@Override
 			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-				if(arg0==200){
+				if (arg0 == 200) {
 					try {
 						JSONObject object = new JSONObject(new String(arg2));
 						String version = object.optString("version");
-						//获取当前版本号 判断程序是否需要更新
+						// 获取当前版本号 判断程序是否需要更新
 						PackageInfo pi = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
 						String versionName = pi.versionName;
-						//更新的内容
+						// 更新的内容
 						String message = object.optString("remark");
-						//更新的文件大小
+						// 更新的文件大小
 						String size = object.optString("fsize");
-						//获得需要更新的地址
+						// 获得需要更新的地址
 						String url = object.optString("apkurl");
-						Log.e("tag", "最新版本为"+version+"  当前版本为"+versionName);
-						if(Double.valueOf(version)>Double.valueOf(versionName))
-						{
-							ShowDialog(url,message);
+						if (Double.valueOf(version) > Double.valueOf(versionName)) {
+							ShowDialog(url, message);
 						}
 					} catch (Exception e) {
-						
+
 						e.printStackTrace();
 					}
 				}
 			}
-			private void ShowDialog(final String url,String message) {
+
+			private void ShowDialog(final String url, String message) {
 				Log.e("tag", "程序需要更新");
-				//弹出dialog是否需要更新
-				String[] mess=message.split("。");
+				// 弹出dialog是否需要更新
+				String[] mess = message.split("。");
 				String content = "";
 				for (String string : mess) {
-					content+=string+"\n";
+					content += string + "\n";
 				}
-				new AlertDialog.Builder(context)
-				.setTitle(R.string.update)
-				.setMessage(content)
-				.setPositiveButton(R.string.yes,new DialogInterface.OnClickListener() {
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						
-						Intent intent = new Intent(LoginActivity.this, LogoServer.class);
-						//标记
-						intent.putExtra("flage","1");
-						intent.putExtra("apkurl", Constant.LOGIN_LOGO.concat(url));
-						startService(intent);
-					}
-				})
-				.setNegativeButton(R.string.no, null)
-				.show();
+				new AlertDialog.Builder(context).setTitle(R.string.update).setMessage(content)
+						.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+
+								Intent intent = new Intent(LoginActivity.this, LogoServer.class);
+								// 标记
+								intent.putExtra("flage", "1");
+								intent.putExtra("apkurl", Constant.LOGIN_LOGO.concat(url));
+								startService(intent);
+							}
+						}).setNegativeButton(R.string.no, null).show();
 			}
+
 			@Override
 			public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-				
+
 			}
 		});
 	}
+
+	private boolean isZh() {
+		Locale locale = getResources().getConfiguration().locale;
+		String language = locale.getLanguage();
+		if (language.endsWith("zh")) {
+
+			return true;
+		} else {
+
+			return false;
+		}
+	}
+
 	@Override
 	public View getcontent() {
 		return View.inflate(LoginActivity.this, R.layout.activity_main, null);

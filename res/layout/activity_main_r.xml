@@ -13,12 +13,12 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/test_data"
+            android:id="@+id/send_data"
+            style="@style/size25"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:text="@string/test_data"
-            style="@style/size25"
-            android:background="@drawable/btselector" />
+            android:background="@drawable/btselector"
+            android:text="@string/send_data" />
     </LinearLayout>
 
     <LinearLayout
@@ -29,12 +29,12 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/send_data"
+            android:id="@+id/test_data"
+            style="@style/size25"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:text="@string/send_data"
-            style="@style/size25"
-            android:background="@drawable/btselector" />
+            android:background="@drawable/btselector"
+            android:text="@string/test_data" />
     </LinearLayout>
 
     <LinearLayout
@@ -46,11 +46,11 @@
 
         <Button
             android:id="@+id/send_NFC"
+            style="@style/size25"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            style="@style/size25"
-            android:text="@string/send_readNFC"
-            android:background="@drawable/btselector" />
+            android:background="@drawable/btselector"
+            android:text="@string/send_readNFC" />
     </LinearLayout>
 
 </LinearLayout>

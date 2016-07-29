@@ -22,7 +22,7 @@ public class Constant {
 	public static final String BATTERY_PACKET = "getGroupPageData";// 电池分组
 	public static final String LOGIN_LOGO = "http://203.191.147.81:8001/";// 企业logo地址+登录返回的地址
 	public static final String LOGIN_LOGOADSS = "http://203.191.147.81:8011/bms/rest/"; // 获得最新版本的地址
-	public static final String GETVERSION_NAME = "getTestInitUpgradeInfo";// 版本号的获取
+	public static final String GETVERSION_NAME = "getTestInitUpgradeInfo/1";// 版本号的获取
 	public static final String LOGOFILE = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Pite_Battery";
 	public static final String LOGOIMAGE = Environment.getExternalStorageDirectory().getAbsolutePath()
 			+ "/Pite_Battery/loge";// logo保存地址

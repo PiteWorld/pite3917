@@ -199,7 +199,6 @@ public class StationActivity extends BaseActivity implements OnItemClickListener
 	 * @return
 	 */
 	class Thread1 extends Thread {
-
 		@Override
 		public void run() {
 			final Bitmap bit = getHttpBitmap(url);

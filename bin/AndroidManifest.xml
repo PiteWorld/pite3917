@@ -36,6 +36,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".service.LogoServer" >
+        </service>
+
         <activity
             android:name=".MainRActivity"
             android:theme="@android:style/Theme.NoTitleBar" >
@@ -63,9 +67,9 @@
             android:name="com.pite.r.BluetoothDiaLogActiyity"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
-         <activity
+        <activity
             android:name="com.pite.r.ReadDataActivity"
-             android:launchMode="singleTask"
+            android:launchMode="singleTask"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
     </application>

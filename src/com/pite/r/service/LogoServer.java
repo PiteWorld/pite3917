@@ -67,9 +67,9 @@ public class LogoServer extends IntentService{
 			BufferedInputStream in=null;
 			FileOutputStream out=null;
 			String fileurl = intent.getStringExtra("apkurl");
-			Log.e("tag", "apk更新的地址为："+fileurl);
+			Log.e("2", "apk更新的地址为："+fileurl);
 			File file = new File(Constant.LOGOFILE+"/"+"apk");
-			Log.e("tag", Constant.LOGOFILE+"/"+"apk"+ "    下载apk存储地址");
+			Log.e("2", Constant.LOGOFILE+"/"+"apk"+ "    下载apk存储地址");
 			if(!file.exists())
 				file.mkdirs();
 			try {

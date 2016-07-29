@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">蓄电池分选管理</string>
+    <string name="loginname">蓄电池分选管理系统</string>
     <string name="action_settings">Settings</string>
     <string name="login_edt_name">请输入用户名</string>
     <string name="login_edt_pwd">请输入密码</string>
